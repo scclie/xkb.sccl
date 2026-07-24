@@ -1,0 +1,35 @@
+{
+  "name": "QWERTY (US)",
+  "desc": "Standard US QWERTY layout",
+  "layers": [
+    {
+      "keys": {
+        "TLDE": "grave",
+        "AE01": "1", "AE02": "2", "AE03": "3", "AE04": "4", "AE05": "5",
+        "AE06": "6", "AE07": "7", "AE08": "8", "AE09": "9", "AE10": "0", "AE11": "minus", "AE12": "equal",
+        "AD01": "q", "AD02": "w", "AD03": "e", "AD04": "r", "AD05": "t",
+        "AD06": "y", "AD07": "u", "AD08": "i", "AD09": "o", "AD10": "p", "AD11": "bracketleft", "AD12": "bracketright",
+        "BKSL": "backslash",
+        "AC01": "a", "AC02": "s", "AC03": "d", "AC04": "f",
+        "AC05": "g", "AC06": "h", "AC07": "j", "AC08": "k", "AC09": "l", "AC10": "semicolon", "AC11": "apostrophe",
+        "AB01": "z", "AB02": "x", "AB03": "c", "AB04": "v", "AB05": "b",
+        "AB06": "n", "AB07": "m", "AB08": "comma", "AB09": "period", "AB10": "slash",
+        "SPCE": "space"
+      }
+    },
+    {
+      "keys": {
+        "TLDE": "asciitilde",
+        "AE01": "exclam", "AE02": "at", "AE03": "numbersign", "AE04": "dollar", "AE05": "percent",
+        "AE06": "asciicircum", "AE07": "ampersand", "AE08": "asterisk", "AE09": "parenleft", "AE10": "parenright", "AE11": "underscore", "AE12": "plus",
+        "AD01": "Q", "AD02": "W", "AD03": "E", "AD04": "R", "AD05": "T",
+        "AD06": "Y", "AD07": "U", "AD08": "I", "AD09": "O", "AD10": "P", "AD11": "braceleft", "AD12": "braceright",
+        "BKSL": "bar",
+        "AC01": "A", "AC02": "S", "AC03": "D", "AC04": "F",
+        "AC05": "G", "AC06": "H", "AC07": "J", "AC08": "K", "AC09": "L", "AC10": "colon", "AC11": "quotedbl",
+        "AB01": "Z", "AB02": "X", "AB03": "C", "AB04": "V", "AB05": "B",
+        "AB06": "N", "AB07": "M", "AB08": "less", "AB09": "greater", "AB10": "question"
+      }
+    }
+  ]
+}

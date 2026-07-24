@@ -1,0 +1,13 @@
+{
+  "name": "xkb.sccl",
+  "private": true,
+  "scripts": {
+    "presets": "./build-presets.sh",
+    "pages": "node build-pages.js",
+    "dev": "./build-presets.sh && node build-pages.js && zine",
+    "build": "./build-presets.sh && node build-pages.js && zine release"
+  },
+  "devDependencies": {
+    "marked": "^15.0.0"
+  }
+}

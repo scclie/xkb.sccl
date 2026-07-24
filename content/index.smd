@@ -1,0 +1,77 @@
+---
+.title = "xkb.sccl - xkb config generator",
+.date = @date("2026-07-24T00:00:00"),
+.author = "sccl",
+.layout = "page.shtml",
+.custom = {
+    .tab = "generator",
+    .description = "XKB config generator - create and customize keyboard layouts",
+},
+---
+
+```=html
+<div class="app">
+  <div class="sidebar">
+    <div class="layout-meta">
+      <h3>Layout Info</h3>
+      <input type="text" id="layout-name" placeholder="Layout name" value="my layout">
+      <input type="text" id="layout-desc" placeholder="Description" value="">
+    </div>
+
+    <div class="options">
+      <h3>Options</h3>
+      <label>
+        <input type="checkbox" id="opt-include" checked> Include level3 (ralt_switch)
+      </label>
+    </div>
+
+    <div class="template-buttons">
+      <h3>Layout</h3>
+      <select id="layout-select">
+        <option value="clear">— clear —</option>
+      </select>
+    </div>
+
+    <div class="actions">
+      <button id="btn-copy" class="primary">copy xkb config</button>
+      <button id="btn-download">download .xkb</button>
+      <button id="btn-reset">reset all</button>
+      <button id="btn-export">export layout</button>
+      <button id="btn-import">import layout</button>
+      <input type="file" id="file-import" accept=".json" hidden>
+    </div>
+  </div>
+
+  <div class="main-area">
+    <div class="layer-tabs">
+      <button class="layer-tab active" data-layer="0">Base</button>
+      <button class="layer-tab" data-layer="1">Shift</button>
+      <button class="layer-tab" data-layer="2">AltGr</button>
+      <button class="layer-tab" data-layer="3">AltGr+Shift</button>
+      <button class="add-layer">+</button>
+    </div>
+
+    <div class="keyboard-container">
+      <div id="keyboard" class="keyboard"></div>
+    </div>
+
+    <div class="output-section">
+      <p class="section-title">generated xkb config</p>
+      <pre><code id="xkb-output"></code></pre>
+    </div>
+  </div>
+</div>
+
+<div class="key-picker-modal" id="key-picker" hidden>
+  <div class="modal-content">
+    <h3>bind: <span id="key-picker-code"></span></h3>
+    <input type="text" id="key-search" placeholder="search..." autocomplete="off" spellcheck="false">
+    <div class="key-list" id="key-list"></div>
+    <p class="key-picker-hint">Type any XKB symbol name. Examples: Cyrillic_a, degree, space, backspace, f13</p>
+    <button id="key-picker-cancel" class="btn">[ cancel ]</button>
+  </div>
+</div>
+
+<script src="/js/presets.js"></script>
+<script src="/js/app.js"></script>
+```

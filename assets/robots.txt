@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xkb.sccl.cc/sitemap.xml

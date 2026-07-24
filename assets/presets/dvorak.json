@@ -1,0 +1,35 @@
+{
+  "name": "Dvorak",
+  "desc": "Dvorak layout",
+  "layers": [
+    {
+      "keys": {
+        "TLDE": "grave",
+        "AE01": "1", "AE02": "2", "AE03": "3", "AE04": "4", "AE05": "5",
+        "AE06": "6", "AE07": "7", "AE08": "8", "AE09": "9", "AE10": "0", "AE11": "bracketleft", "AE12": "bracketright",
+        "AD01": "apostrophe", "AD02": "comma", "AD03": "period", "AD04": "p", "AD05": "y",
+        "AD06": "f", "AD07": "g", "AD08": "c", "AD09": "r", "AD10": "l", "AD11": "slash", "AD12": "equal",
+        "BKSL": "backslash",
+        "AC01": "a", "AC02": "o", "AC03": "e", "AC04": "u",
+        "AC05": "i", "AC06": "d", "AC07": "h", "AC08": "t", "AC09": "n", "AC10": "s", "AC11": "minus",
+        "AB01": "semicolon", "AB02": "q", "AB03": "j", "AB04": "k", "AB05": "x",
+        "AB06": "b", "AB07": "m", "AB08": "w", "AB09": "v", "AB10": "z",
+        "SPCE": "space"
+      }
+    },
+    {
+      "keys": {
+        "TLDE": "asciitilde",
+        "AE01": "exclam", "AE02": "at", "AE03": "numbersign", "AE04": "dollar", "AE05": "percent",
+        "AE06": "asciicircum", "AE07": "ampersand", "AE08": "asterisk", "AE09": "parenleft", "AE10": "parenright", "AE11": "braceleft", "AE12": "braceright",
+        "AD01": "quotedbl", "AD02": "less", "AD03": "greater", "AD04": "P", "AD05": "Y",
+        "AD06": "F", "AD07": "G", "AD08": "C", "AD09": "R", "AD10": "L", "AD11": "question", "AD12": "plus",
+        "BKSL": "bar",
+        "AC01": "A", "AC02": "O", "AC03": "E", "AC04": "U",
+        "AC05": "I", "AC06": "D", "AC07": "H", "AC08": "T", "AC09": "N", "AC10": "S", "AC11": "underscore",
+        "AB01": "colon", "AB02": "Q", "AB03": "J", "AB04": "K", "AB05": "X",
+        "AB06": "B", "AB07": "M", "AB08": "W", "AB09": "V", "AB10": "Z"
+      }
+    }
+  ]
+}

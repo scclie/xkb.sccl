@@ -1,0 +1,13 @@
+# xkb.sccl.cc
+
+XKB config generator for keyboard layouts. Create, customize, and export XKB configuration files with a visual keyboard editor.
+
+## Features
+- Visual matrix editor for keyboard layouts
+- Multiple layers support (Base, Shift, AltGr, AltGr+Shift)
+- Pre-built templates (Planck, Preonic, Ergodox, 60%, Corne, Split)
+- Export to XKB config format
+- Import/Export layout as JSON
+
+## Usage
+Click on any key to assign a new character. Use the layer tabs to define different layers. Copy the generated XKB config or export/import your layout.
