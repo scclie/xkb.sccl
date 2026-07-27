@@ -32,10 +32,10 @@ for (const page of pages) {
 
   const smd = `---
 .title = "${page.title}",
-.date = @date("${new Date().toISOString().slice(0, 10)}T00:00:00"),
-.author = "sccl",
+.date = .date("${new Date().toISOString().slice(0, 10)}T00:00:00"),
+.authors = ["sccl"],
 .layout = "page.shtml",
-.custom = {
+.custom = .{
     .tab = "${page.tab}",
     .description = "${page.description}",
 },

@@ -1,4 +1,5 @@
-Site {
+.zine_version = "0.13.0",
+.site = .simple(.{
     .title = "xkb.sccl",
     .host_url = "https://xkb.sccl.cc",
     .content_dir_path = "content",
@@ -11,4 +12,4 @@ Site {
         "llms.txt",
         "sitemap.xml",
     ],
-}
+}),
