@@ -8,7 +8,7 @@ Want to add your keyboard layout to xkb.sccl? Here's how.
 2. Click **export layout** to download the JSON file
 3. Fork this repo and add your JSON to `assets/presets/`
    - Filename becomes the preset id: `my-layout.json` → id `my-layout`
-4. [Open a PR](https://github.com/scclie/xkb.sccl/pulls)
+4. Open a PR on [codeberg](https://codeberg.org/scclie/xkb.sccl/pulls) or [github](https://github.com/scclie/xkb.sccl/pulls)
 
 That's it. The build script runs automatically on deploy.
 

@@ -34,6 +34,6 @@ For persistent setup, add to your `/etc/X11/xkb/symbols/` or use your desktop en
 
 ## Links
 
-- [Source code](https://github.com/scclie/xkb.sccl)
+- [Source code](https://git.sccl.cc/scclie/xkb.sccl)
 - [XKB keymap format docs](https://xkbcommon.org/doc/current/keymap-text-format-v1-v2.html)
 - [XKB keysym reference](https://xkbcommon.org/doc/current/group__keysyms.html)
