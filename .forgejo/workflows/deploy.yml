@@ -1,0 +1,41 @@
+name: deploy
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: xkb-sccl-deploy
+
+jobs:
+  deploy:
+    if: startsWith(github.server_url, 'http://10.69.0.10') || startsWith(github.server_url, 'https://git.sccl.cc')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Setup Zine
+        uses: https://github.com/kristoff-it/setup-zine@v2
+
+      - name: Install build dependencies
+        run: npm install --ignore-scripts
+
+      - name: Build
+        run: npm run build
+
+      - name: Install rsync
+        run: apt-get update && apt-get install -y rsync
+
+      - name: Publish to /tank/sites
+        run: |
+          set -euo pipefail
+          RELEASE="$(date -u +%Y%m%dT%H%M%S)-${GITHUB_SHA::8}"
+          REL="/tank/sites/xkb.sccl/releases/${RELEASE}"
+          mkdir -p "${REL}"
+          rsync -a --delete ./public/ "${REL}/"
+          ln -sfn "releases/${RELEASE}" /tank/sites/xkb.sccl/public
+          ls -1 /tank/sites/xkb.sccl/releases | sort | head -n -5 | xargs -r -I{} rm -rf "/tank/sites/xkb.sccl/releases/{}"
